@@ -1,0 +1,131 @@
+@import "../../style/root.scss";
+
+.app-header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  @extend %font-header-links;
+  background-color: white;
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    @extend %leyout-size;
+    height: 80px;
+    align-items: center;
+    &__nav-container {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    &__links {
+      display: flex;
+    }
+  }
+  &__icons-block {
+    display: flex;
+    align-items: center;
+    &__logout {
+      cursor: pointer;
+      color: #9f78ff;
+    }
+    &__basket {
+      position: relative;
+      margin-right: 10px;
+      &__count {
+        position: absolute;
+        top: 3px;
+        right: 8px;
+        font-size: 14px;
+        font-weight: bold;
+        color: coral;
+      }
+    }
+    &--active {
+      border-bottom: none;
+    }
+    &__iconAuth:hover {
+      transform: rotate(88deg);
+      transition: 0.5s;
+    }
+  }
+  &__logo {
+    font-family: "Cinzel", serif;
+    font-size: 40px;
+    font-weight: normal;
+    color: #9f78ff;
+    border: none;
+    margin-right: 40px;
+  }
+  &__icons {
+    margin: 10px;
+    cursor: pointer;
+    &:hover {
+      transition: 0.5s;
+      transform: rotateY(360deg);
+    }
+  }
+  &__twit {
+    color: #1c9cea;
+  }
+  &__face {
+    color: #395597;
+  }
+  &__pint {
+    color: #df1a26;
+  }
+  .header-menu-burger {
+    display: none;
+    &__links {
+      display: none;
+    }
+  }
+  .header-menu-burger {
+    display: none;
+  }
+}
+.auth-style {
+  background-color: transparent;
+  color: white;
+}
+.auth-Color {
+  color: white;
+  cursor: pointer;
+}
+
+@include media(tablet) {
+  .app-header {
+    &__nav {
+      &__links {
+        display: none;
+      }
+    }
+    .header-menu-burger {
+      display: block;
+      margin-left: 10px;
+      color: #9f78ff;
+      &__links {
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        height: 300px;
+        background-color: rgba($color: #000000, $alpha: 0.9);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+    .burger-Link {
+      color: white;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+  }
+}

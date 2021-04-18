@@ -1,0 +1,37 @@
+@import "../../style/root.scss";
+
+.app-Footer {
+  padding: 50px;
+  color: white;
+  background-color: #1d2547;
+  @extend %font-header-links;
+  line-height: 40px;
+  &__block {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: space-between;
+  }
+  &__items {
+    width: 400px;
+  }
+  &__logo {
+    padding-bottom: 10px;
+    font-size: 40px;
+    @extend %font-logo;
+  }
+  &__icons {
+    display: flex;
+  }
+  &__icons svg {
+    width: 30px;
+    margin: 25px 10px 0 0;
+  }
+}
+
+@include media(tablet) {
+  .app-Footer {
+    &__block {
+      grid-template-columns: repeat(1, auto);
+    }
+  }
+}

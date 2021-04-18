@@ -1,0 +1,19 @@
+@import "../../style/root.scss";
+
+.app-basket {
+  background-color: #eff5f8;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  justify-content: center;
+  align-items: center;
+  &__img {
+    width: 250px;
+  }
+  &__textNoItem {
+    color: #9f78ff;
+    font-size: 40px;
+    text-transform: uppercase;
+    @extend %font-title-sections;
+  }
+}

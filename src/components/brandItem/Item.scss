@@ -1,0 +1,39 @@
+@import "../../style/root.scss";
+
+.app-block-item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  &__btn {
+    position: absolute;
+    top: 10;
+    left: 35%;
+    bottom: 42%;
+    background-color: $btn_color;
+    color: white;
+    border: none;
+    opacity: 0.1;
+    transition: 0.5s;
+  }
+  &__show {
+    width: 100%;
+    height: 100px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #2d2b46, $alpha: 0.7);
+    font-size: 50px;
+    bottom: -100px;
+    transition: 0.5s;
+  }
+  &:hover &__btn {
+    bottom: 40%;
+    opacity: 1;
+  }
+  &:hover &__show {
+    bottom: 0px;
+  }
+}

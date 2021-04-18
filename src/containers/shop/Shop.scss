@@ -1,0 +1,94 @@
+@import "../../style/root.scss";
+
+.app-shop-container {
+  width: 90%;
+  margin: 50px auto;
+  &__shop {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 35px 0;
+    background-color: #eff5f8;
+    border-radius: 20px;
+    &__product {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      &__item-img {
+        width: 220px;
+      }
+    }
+    &__nav-bar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(212, 221, 221);
+      border-radius: 20px;
+      &__btns {
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: right;
+        transition: 0.25;
+        &:hover {
+          cursor: pointer;
+          transition: 0.9s;
+        }
+      }
+    }
+  }
+  &__page-title {
+    @extend %font-logo;
+    font-size: 80px;
+    color: #140c40;
+  }
+  &__browser-latest {
+    @extend %font-header-links;
+  }
+}
+
+@include media(tablet) {
+  .app-shop-container {
+    width: 90%;
+    margin: 50px auto;
+    &__shop {
+      display: grid;
+      grid-template-columns: auto auto;
+      margin: 35px 0;
+      background-color: #eff5f8;
+      border-radius: 20px;
+      &__product {
+        display: grid;
+        grid-template-columns: auto auto;
+        &__item-img {
+          width: 100px;
+        }
+      }
+      &__nav-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(212, 221, 221);
+        border-radius: 20px;
+        &__btns {
+          width: 200px;
+          height: 50px;
+          font-size: 18px;
+          font-weight: bold;
+          text-align: right;
+          transition: 0.25;
+          &:hover {
+            cursor: pointer;
+            transition: 0.9s;
+          }
+        }
+      }
+    }
+  }
+  .tablet-Style-icon-but {
+    width: 40px;
+    left: 40px;
+    top: 25px;
+  }
+}

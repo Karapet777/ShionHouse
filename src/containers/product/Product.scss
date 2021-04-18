@@ -1,0 +1,32 @@
+@import "../../style/root.scss";
+
+.app-product {
+  max-width: 90%;
+  margin: 70px auto;
+  &__title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 70px;
+    @extend %font-title-sections;
+  }
+  &__items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    justify-content: center;
+    margin: 70px auto;
+  }
+  &__btn {
+    text-align: center;
+  }
+}
+
+@include media(tablet) {
+  .app-product {
+    &__items {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@import "../../../style/root";
+
+.app-signup {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: url(../../../assets/imges/sign-bg.png);
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+  @extend %font-header-links;
+  &__block {
+    margin-left: 400px;
+    border-radius: 20px;
+    width: 450px;
+    height: 600px;
+    backdrop-filter: blur(5px);
+    border: 1px solid #595853;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__items {
+      height: 250px;
+      padding: 15px;
+      text-align: center;
+      position: relative;
+      &__errorText {
+        color: red;
+        font-size: 13px;
+      }
+      &__error-border {
+        border-bottom: 1px solid red;
+      }
+      &__name {
+        position: absolute;
+        right: 71px;
+        top: 27px;
+      }
+      &__mail {
+        position: absolute;
+        right: 71px;
+        top: 80px;
+      }
+      &__pssOn {
+        position: absolute;
+        right: 69px;
+        top: 136px;
+      }
+      &__pssOff {
+        position: absolute;
+        right: 69px;
+        top: 136px;
+      }
+      &__btn {
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        height: 50px;
+        @extend %font-title-sections;
+        cursor: pointer;
+      }
+    }
+    &__text-signup {
+      margin-bottom: 20px;
+      font-size: 40px;
+      @extend %font-title-sections;
+    }
+    &__Remember {
+      width: 100%;
+      text-align: center;
+      margin: 20px 0;
+      &__input {
+        width: 25px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@include media(tablet) {
+  .app-signup {
+    justify-content: center;
+    background-position: left;
+    &__block {
+      margin-left: 0px;
+    }
+  }
+}

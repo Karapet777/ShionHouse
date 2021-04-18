@@ -1,0 +1,18 @@
+@import "../../style/root.scss";
+.app-brand-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  width: 100%;
+  max-width: 90%;
+  margin: 20px auto;
+  & img {
+    width: 100%;
+  }
+}
+
+@include media(tablet) {
+  .app-brand-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

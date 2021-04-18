@@ -1,0 +1,13 @@
+.app-product-details {
+  background: url(../../assets/imges/BG.jpg);
+  background-size: cover;
+  height: 100%;
+  &__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px);
+  }
+}

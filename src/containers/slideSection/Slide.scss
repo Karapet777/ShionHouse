@@ -1,0 +1,45 @@
+@import "../../style/root.scss";
+
+.app-slide {
+  @extend %leyout-size;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url(../../assets/imges/popular-imtes2.png);
+  background-position: center;
+  background-size: cover;
+  &__text {
+    font-size: 110px;
+    color: white;
+  }
+  &__btn {
+    font-size: 20px;
+  }
+}
+
+@include media(mobile) {
+  // .app-slide {
+  //   margin: 0;
+  //   width: 100%;
+  //   height: 800px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  //   text-align: center;
+  //   background: url(../../assets/imges/popular-imtes2.png);
+  //   background-position: center;
+  //   background-size: cover;
+  //   &__text {
+  //     font-size: 110px;
+  //     color: white;
+  //   }
+  //   &__btn {
+  //     font-size: 20px;
+  //   }
+  // }
+}

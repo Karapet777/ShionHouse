@@ -1,0 +1,11 @@
+@import "../../style/root.scss";
+.app-Layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  &__main {
+    flex: 1;
+    padding-top: 80px;
+  }
+}

@@ -1,0 +1,33 @@
+@import "../../style/root.scss";
+
+.app-NewCollection {
+  width: 90%;
+  height: 650px;
+  margin: 60px auto;
+  transition: 0.5s;
+  position: relative;
+  &__img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  &__block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 90%;
+    margin-bottom: 50px;
+  }
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+@include media(tablet) {
+  .app-NewCollection {
+    height: 250px;
+    &__block {
+      height: 90%;
+    }
+  }
+}

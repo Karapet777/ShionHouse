@@ -1,0 +1,48 @@
+@import "../../style/root.scss";
+
+.app-about-container {
+  width: 100%;
+  margin: 70px auto;
+  text-align: center;
+  &__block-story {
+    &__block-text {
+      @extend %font-header-links;
+      color: #140c40;
+      width: 100%;
+      max-width: 800px;
+      margin: auto;
+      &__title {
+        margin: 20px 0;
+        font-size: 80px;
+      }
+    }
+  }
+}
+.info-text {
+  padding: 10px;
+  margin: 40px 0;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@include media(tablet) {
+  .app-about-container {
+    &__block-story {
+      &__img {
+        width: 650px;
+      }
+      &__block-text {
+        max-width: 600px;
+        &__title {
+          font-size: 70px;
+        }
+      }
+    }
+  }
+  .info-text {
+    padding: 10px;
+    margin: 40px 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

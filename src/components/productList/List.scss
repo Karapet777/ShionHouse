@@ -1,0 +1,53 @@
+@import "../../style/root.scss";
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  &__buy {
+    border-radius: 50%;
+    border: 1px solid #9f78ff;
+    position: relative;
+    top: 50px;
+    right: -100px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &__remove {
+    color: #9f78ff;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    padding: 10px 0;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  &__name {
+    @extend %font-header-links;
+    font-size: 18px;
+    transition: 0.2s ease-in;
+  }
+  &__icons {
+    display: flex;
+    &__stars {
+      color: #dfc334;
+    }
+  }
+  &__icons svg {
+    padding: 15px 0;
+  }
+  &:hover &__name {
+    color: $btn_color;
+  }
+}
