@@ -1,0 +1,32 @@
+@import "../../style/root.scss";
+.app-profile {
+  height: 100%;
+  background-color: rgb(223, 114, 114);
+  background: url(../../assets/imges/profile-BG.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 650px;
+    backdrop-filter: blur(6px);
+    border: 1px solid #706639;
+    border-bottom-left-radius: 150px;
+    border-top-right-radius: 150px;
+    &__img-user {
+      width: 200px;
+      margin-bottom: 50px;
+    }
+    & p {
+      color: white;
+      font-size: 20px;
+      margin-bottom: 15px;
+      @extend %font-title-sections;
+    }
+  }
+}

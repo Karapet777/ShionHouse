@@ -15,6 +15,8 @@ const Shop = () => {
   const [start, setStart] = useState(6);
   const [hesMore, setHesMore] = useState(true);
 
+  console.log(context.state.user.displayName);
+
   useEffect(() => {
     const initialDataProduct = Data.product.filter((el) => {
       return el.id <= start && el;

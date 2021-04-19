@@ -47,7 +47,7 @@ const Login = () => {
         if (isRemember) {
           localStorage.setItem("user", JSON.stringify(user));
         }
-        history.push("/");
+        history.push("/profile");
       } catch (err) {
         setErrorText(err.message);
       }

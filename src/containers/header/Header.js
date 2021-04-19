@@ -69,6 +69,15 @@ const Header = () => {
             </NavLink>
           </div>
           <div className="app-header__nav__links">
+            {context.state.user ? (
+              <NavLink
+                onClick={closeBurgerMenu}
+                to="/profile"
+                // className="app-header__logo"
+              >
+                PROFILE
+              </NavLink>
+            ) : null}
             {headerLinks.map((el) => (
               <NavLink key={el.to} to={el.to} className={classes.navLink}>
                 {el.title}

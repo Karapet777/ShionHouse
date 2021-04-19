@@ -9,6 +9,7 @@ import About from "../pages/About";
 import Busket from "../containers/basket/Basket";
 import ProductDetails from "../containers/productDetails/ProductDetails";
 import Auth from "../containers/auth/Auth";
+import Profile from "../containers/profile/Profile";
 
 const AppRouter = () => {
   return (
@@ -17,6 +18,7 @@ const AppRouter = () => {
       <Layout>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/profile" component={Profile} />
           <Route exact path="/shop" component={Shop} />
           <Route exact path="/shop/:productId" component={ProductDetails} />
           <Route exact path="/about" component={About} />
