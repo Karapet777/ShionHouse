@@ -30,3 +30,14 @@
     }
   }
 }
+@include media(mobile) {
+  .app-product {
+    &__title {
+      font-size: 40px;
+    }
+    &__items {
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+    }
+  }
+}

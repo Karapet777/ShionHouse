@@ -35,3 +35,13 @@
     }
   }
 }
+@include media(mobile) {
+  .app-Footer {
+    &__block {
+      grid-template-columns: repeat(1, auto);
+    }
+    &__items {
+      width: 100%;
+    }
+  }
+}

@@ -12,6 +12,7 @@
   background: url(../../assets/imges/popular-imtes2.png);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   &__text {
     font-size: 110px;
     color: white;
@@ -22,24 +23,13 @@
 }
 
 @include media(mobile) {
-  // .app-slide {
-  //   margin: 0;
-  //   width: 100%;
-  //   height: 800px;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   align-items: center;
-  //   text-align: center;
-  //   background: url(../../assets/imges/popular-imtes2.png);
-  //   background-position: center;
-  //   background-size: cover;
-  //   &__text {
-  //     font-size: 110px;
-  //     color: white;
-  //   }
-  //   &__btn {
-  //     font-size: 20px;
-  //   }
-  // }
+  .app-slide {
+    height: 450px;
+    &__text {
+      font-size: 40px;
+    }
+    &__btn {
+      font-size: 16px;
+    }
+  }
 }

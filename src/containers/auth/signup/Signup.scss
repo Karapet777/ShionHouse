@@ -88,3 +88,17 @@
     }
   }
 }
+
+@include media(mobile) {
+  .app-signup {
+    width: 100%;
+    justify-content: center;
+    background-position: top;
+    &__block {
+      backdrop-filter: blur(2px);
+      margin: 60px 0 0 0;
+      width: 300px;
+      height: 85%;
+    }
+  }
+}

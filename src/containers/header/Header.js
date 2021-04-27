@@ -70,11 +70,7 @@ const Header = () => {
           </div>
           <div className="app-header__nav__links">
             {context.state.user ? (
-              <NavLink
-                onClick={closeBurgerMenu}
-                to="/profile"
-                // className="app-header__logo"
-              >
+              <NavLink onClick={closeBurgerMenu} to="/profile">
                 PROFILE
               </NavLink>
             ) : null}
@@ -86,16 +82,18 @@ const Header = () => {
           </div>
         </div>
         <div className="app-header__icons-block">
-          <a href="https://twitter.com/" target="blank">
-            <TwitterIcon className="app-header__twit app-header__icons" />
-          </a>
-          <a href="https://www.facebook.com/" target="blank">
-            <FacebookIcon className="app-header__face app-header__icons" />
-          </a>
-          <a href="https://www.pinterest.ru/" target="blank">
-            <PinterestIcon className="app-header__pint app-header__icons" />
-          </a>
-          <SearchIcon className="app-header__search app-header__icons" />
+          <div className="app-header__icons-block__items">
+            <a href="https://twitter.com/" target="blank">
+              <TwitterIcon className="app-header__twit app-header__icons" />
+            </a>
+            <a href="https://www.facebook.com/" target="blank">
+              <FacebookIcon className="app-header__face app-header__icons" />
+            </a>
+            <a href="https://www.pinterest.ru/" target="blank">
+              <PinterestIcon className="app-header__pint app-header__icons" />
+            </a>
+            <SearchIcon className="app-header__search app-header__icons" />
+          </div>
           {context.state.user && (
             <NavLink activeClass="app-header__icons-block--active" to="/basket">
               <div className="app-header__icons-block__basket">
@@ -133,6 +131,18 @@ const Header = () => {
                   {el.title}
                 </NavLink>
               ))}
+              <div className="header-menu-burger__links__socIcons">
+                <a href="https://twitter.com/" target="blank">
+                  <TwitterIcon className="app-header__twit app-header__icons" />
+                </a>
+                <a href="https://www.facebook.com/" target="blank">
+                  <FacebookIcon className="app-header__face app-header__icons" />
+                </a>
+                <a href="https://www.pinterest.ru/" target="blank">
+                  <PinterestIcon className="app-header__pint app-header__icons" />
+                </a>
+                <SearchIcon className="app-header__search app-header__icons" />
+              </div>
             </div>
           ) : null}
         </div>

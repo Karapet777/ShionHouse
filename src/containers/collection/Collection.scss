@@ -23,3 +23,15 @@
     margin-top: 120px;
   }
 }
+
+@include media(mobile) {
+  .app-collection-container {
+    background-position: floor($number: -450px);
+    background-size: cover;
+    max-width: 100%;
+
+    &__text {
+      font-size: 20px;
+    }
+  }
+}

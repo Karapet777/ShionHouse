@@ -1,7 +1,7 @@
 @import "../../style/root.scss";
 .app-profile {
   height: 100%;
-  background-color: rgb(223, 114, 114);
+  // background-color: rgb(223, 114, 114);
   background: url(../../assets/imges/profile-BG.jpg);
   background-size: cover;
   display: flex;
@@ -27,6 +27,21 @@
       font-size: 20px;
       margin-bottom: 15px;
       @extend %font-title-sections;
+    }
+  }
+}
+
+@include media(mobile) {
+  .app-profile {
+    background-repeat: no-repeat;
+    background-position: floor($number: -1000px);
+    align-items: center;
+    &__block {
+      width: 250px;
+      height: 450px;
+      &__img-user {
+        width: 150px;
+      }
     }
   }
 }

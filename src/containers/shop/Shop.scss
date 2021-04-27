@@ -86,9 +86,34 @@
       }
     }
   }
-  .tablet-Style-icon-but {
+  .respons-Style-icon-but {
     width: 40px;
     left: 40px;
     top: 25px;
+  }
+}
+
+@include media(mobile) {
+  .app-shop-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__page-title {
+      font-size: 40px;
+    }
+    &__shop {
+      grid-template-columns: auto;
+      &__product {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        &__item-img {
+          width: 110px;
+        }
+      }
+    }
+  }
+  .respons-Style-icon-but {
+    right: -35px;
   }
 }

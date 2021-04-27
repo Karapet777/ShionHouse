@@ -18,12 +18,8 @@ const PopularProduct = () => {
           </p>
           <Button title="Read More" className="btn-popular" />
         </div>
-        <div className="app-popular__block-rigth">
-          <img
-            className="app-popular__block-rigth__img2"
-            src={img2}
-            alt="img"
-          />
+        <div className="app-popular__block-left">
+          <img className="app-popular__block-left__img1" src={img2} alt="img" />
           <p className="app-popular__text">
             Established fact thct by the readadle content
           </p>

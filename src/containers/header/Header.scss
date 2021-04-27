@@ -107,9 +107,49 @@
       margin-left: 10px;
       color: #9f78ff;
       &__links {
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;
-        height: 300px;
+        background-color: rgba($color: #000000, $alpha: 0.9);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        &__socIcons {
+          display: none;
+        }
+      }
+    }
+    .burger-Link {
+      color: white;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@include media(mobile) {
+  .app-header {
+    &__nav {
+      &__links {
+        display: none;
+      }
+    }
+    &__logo {
+      font-size: 20px;
+    }
+    &__icons-block {
+      &__items {
+        display: none;
+      }
+    }
+    .header-menu-burger {
+      display: block;
+      margin-left: 10px;
+      color: #9f78ff;
+      &__links {
         background-color: rgba($color: #000000, $alpha: 0.9);
         display: flex;
         flex-direction: column;
@@ -126,6 +166,9 @@
       color: white;
       font-size: 25px;
       margin-bottom: 10px;
+    }
+    &__search {
+      color: white;
     }
   }
 }

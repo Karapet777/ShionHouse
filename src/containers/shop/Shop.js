@@ -15,8 +15,6 @@ const Shop = () => {
   const [start, setStart] = useState(6);
   const [hesMore, setHesMore] = useState(true);
 
-  console.log(context.state.user.displayName);
-
   useEffect(() => {
     const initialDataProduct = Data.product.filter((el) => {
       return el.id <= start && el;
@@ -118,7 +116,7 @@ const Shop = () => {
                   }}
                   isBasket={true}
                   id={el.id}
-                  classNameIconBuy="tablet-Style-icon-but"
+                  classNameIconBuy="respons-Style-icon-but"
                 />
               );
             })}

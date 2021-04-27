@@ -17,3 +17,12 @@
     @extend %font-title-sections;
   }
 }
+
+@include media(mobile) {
+  .app-basket {
+    grid-template-columns: repeat(2, auto);
+    &__img {
+      width: 100px;
+    }
+  }
+}
